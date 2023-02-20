@@ -9,8 +9,8 @@ class Scotty < Formula
   license "Apache-2.0"
 
   on_macos do
-    url "https://github.com/KonstantinGasser/scotty/releases/download/v0.0.1/scotty_Darwin_all.tar.gz", using: CurlDownloadStrategy
-    sha256 "2528654eb9d13053b50ce35943874a0cf874022fb44239bb745a5199acf21385"
+    url "https://github.com/KonstantinGasser/scotty/releases/download/v0.0.1/scotty_Darwin_all.tar.gz"
+    sha256 "c2b656018c35607d2d8c59e790f7724c414dca0dd53c66887597848fd167970e"
 
     def install
       bin.install "scotty"
@@ -19,16 +19,16 @@ class Scotty < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/KonstantinGasser/scotty/releases/download/v0.0.1/scotty_Linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "cf980670415fb425127637bd640c91fe99754165bdb1cea2a22ad732466d5a48"
+      url "https://github.com/KonstantinGasser/scotty/releases/download/v0.0.1/scotty_Linux_arm64.tar.gz"
+      sha256 "0c8280d43c28dd6cfc994bb933e58ea7697c9a5b64cbf8e03a13556eb49804ee"
 
       def install
         bin.install "scotty"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/KonstantinGasser/scotty/releases/download/v0.0.1/scotty_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "2bd20b09abbda6d9779b823e64c387f3077b3c8d1ee9620579e69a3fb9f37938"
+      url "https://github.com/KonstantinGasser/scotty/releases/download/v0.0.1/scotty_Linux_x86_64.tar.gz"
+      sha256 "2d50625540aced10af65fcbf73eecaa176f6a059eda4b39fc83ae5c7498b7c1a"
 
       def install
         bin.install "scotty"

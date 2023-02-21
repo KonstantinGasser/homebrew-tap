@@ -10,7 +10,7 @@ class Scotty < Formula
 
   on_macos do
     url "https://github.com/KonstantinGasser/scotty/releases/download/v0.0.1/scotty_Darwin_all.tar.gz"
-    sha256 "c2b656018c35607d2d8c59e790f7724c414dca0dd53c66887597848fd167970e"
+    sha256 "549aa565bc4f3ece00dcda1e5145a5861233a8df6292fb2e018b59acb719e85d"
 
     def install
       bin.install "scotty"
@@ -20,7 +20,7 @@ class Scotty < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/KonstantinGasser/scotty/releases/download/v0.0.1/scotty_Linux_arm64.tar.gz"
-      sha256 "0c8280d43c28dd6cfc994bb933e58ea7697c9a5b64cbf8e03a13556eb49804ee"
+      sha256 "052197a3624be56894545e07ac29b24db802b003b36e8260272f8fd957e7d0ae"
 
       def install
         bin.install "scotty"
@@ -28,7 +28,7 @@ class Scotty < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/KonstantinGasser/scotty/releases/download/v0.0.1/scotty_Linux_x86_64.tar.gz"
-      sha256 "2d50625540aced10af65fcbf73eecaa176f6a059eda4b39fc83ae5c7498b7c1a"
+      sha256 "647fab45502126666bb442d8920c5c54644766864310717a2e9931887aed7499"
 
       def install
         bin.install "scotty"

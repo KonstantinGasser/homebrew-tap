@@ -5,12 +5,12 @@
 class Scotty < Formula
   desc "Multiplex log streams in your local environment"
   homepage "https://github.com/KonstantinGasser/scotty"
-  version "0.0.1"
+  version "0.0.2"
   license "Apache-2.0"
 
   on_macos do
-    url "https://github.com/KonstantinGasser/scotty/releases/download/v0.0.1/scotty_Darwin_all.tar.gz"
-    sha256 "c36e8e05df8a3a7f192934eff5d9f26718c615393462dce2af46f0ffac8d2f94"
+    url "https://github.com/KonstantinGasser/scotty/releases/download/v0.0.2/scotty_Darwin_all.tar.gz"
+    sha256 "bffc77a59c88cac63d71396cb2fe65160fce6f8779140d52dd881582d6c45b1f"
 
     def install
       bin.install "scotty"
@@ -19,16 +19,16 @@ class Scotty < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/KonstantinGasser/scotty/releases/download/v0.0.1/scotty_Linux_arm64.tar.gz"
-      sha256 "a20628aadb9b98e50841b52b1e921312a492b9a41105e37457443c676de4e8d4"
+      url "https://github.com/KonstantinGasser/scotty/releases/download/v0.0.2/scotty_Linux_arm64.tar.gz"
+      sha256 "933dd846db2166b9a424bb808d202d60c1bca57ab89ac1152da0794a9448ff06"
 
       def install
         bin.install "scotty"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/KonstantinGasser/scotty/releases/download/v0.0.1/scotty_Linux_x86_64.tar.gz"
-      sha256 "f5ddf0f2794579faf3f9054ce187e6045bae64c0316f3d744a381c2740d10062"
+      url "https://github.com/KonstantinGasser/scotty/releases/download/v0.0.2/scotty_Linux_x86_64.tar.gz"
+      sha256 "afbb956d1fcc02c54b662779f067a0a5250529f992651e272bd1cf1a290fb171"
 
       def install
         bin.install "scotty"

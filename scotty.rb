@@ -5,12 +5,12 @@
 class Scotty < Formula
   desc "Multiplex log streams in your local environment"
   homepage "https://github.com/KonstantinGasser/scotty"
-  version "0.1.2"
+  version "0.1.3"
   license "Apache-2.0"
 
   on_macos do
-    url "https://github.com/KonstantinGasser/scotty/releases/download/v0.1.2/scotty_Darwin_all.tar.gz"
-    sha256 "f190180c0bc18f4064c4befb25faf7c394d6257e001cecde773e75ffe5785e8d"
+    url "https://github.com/KonstantinGasser/scotty/releases/download/v0.1.3/scotty_Darwin_all.tar.gz"
+    sha256 "31822d7c7f55e4224411ee3e48ffce116bb419e7c774921d1e1e27c05985f6a9"
 
     def install
       bin.install "scotty"
@@ -19,24 +19,24 @@ class Scotty < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/KonstantinGasser/scotty/releases/download/v0.1.2/scotty_Linux_armv6.tar.gz"
-      sha256 "f9665649df9bb37a008e7a954570d9a46d11f0b08f8bd589cea5da50c835fca9"
+      url "https://github.com/KonstantinGasser/scotty/releases/download/v0.1.3/scotty_Linux_armv6.tar.gz"
+      sha256 "bea3b7485b22be62317d2b739b46ac392ab3d1d01dd41590cc9e7279a1ab0454"
 
       def install
         bin.install "scotty"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/KonstantinGasser/scotty/releases/download/v0.1.2/scotty_Linux_arm64.tar.gz"
-      sha256 "df8f131f03efc1048f8543a7b7cf12ce2292b749be7673ef368c247ea4733cd9"
+      url "https://github.com/KonstantinGasser/scotty/releases/download/v0.1.3/scotty_Linux_arm64.tar.gz"
+      sha256 "3892454061482d8b1a2653cd1b68bac054d0dfad2b6c2528d70101476aabd0e6"
 
       def install
         bin.install "scotty"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/KonstantinGasser/scotty/releases/download/v0.1.2/scotty_Linux_x86_64.tar.gz"
-      sha256 "18fa2e31cc35bc9867a8be387fc7c6e47abf1f41c8165b728d843e24cc3fb06c"
+      url "https://github.com/KonstantinGasser/scotty/releases/download/v0.1.3/scotty_Linux_x86_64.tar.gz"
+      sha256 "167e232b491cbcb87d9c6512f19a0685374e0955e01a789d3266c2ce80e93b76"
 
       def install
         bin.install "scotty"
